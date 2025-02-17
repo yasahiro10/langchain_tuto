@@ -7,8 +7,9 @@ print(chat) # model='llama3.2:1b'
 '''
 from langchain_ollama import ChatOllama
 def get_completion(prompt):
-    model = ChatOllama(model='llama3.2:1b', options={'num_gpu': 1})
+    model = ChatOllama(model='llama3.2:1b')
     response = model.invoke(prompt)
     return response.content
 
-print(get_completion("what is langchain"))
+
+# print(get_completion("what is langchain"))
